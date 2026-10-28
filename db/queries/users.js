@@ -1,6 +1,5 @@
-import express from "express";
-const router = express.Router();
-export default router;
+import bcrypt from "bcrypt";
+import db from "#db/client";
 
 export async function createUser(username, password) {
   const sql = `
